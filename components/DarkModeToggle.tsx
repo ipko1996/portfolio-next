@@ -1,21 +1,20 @@
 "use client";
 
-import { useChangeDarkMode } from "../hooks/useChangeDarkMode";
-import { ChangeEventHandler } from "react";
+import {useChangeDarkMode} from "../hooks/useChangeDarkMode";
+import {MouseEventHandler} from "react";
 
 export default function DarkModeToggle() {
-  const [isDarkMode, toggle, enable, disable] = useChangeDarkMode();
+  const [isDarkMode, toggle] = useChangeDarkMode();
 
   return (
     <div>
       <div className="flex flex-row items-center space-x-2">
         <div>☀</div>
-
         <input
-          className="toggle toggle-lg"
+          className="toggle toggle-lg outline-none"
           type="checkbox"
-          checked={isDarkMode as boolean}
-          onChange={toggle as ChangeEventHandler<HTMLInputElement>}
+          defaultChecked={isDarkMode as boolean}
+          onClick={toggle as  MouseEventHandler<HTMLInputElement>}
         />
         <div>☾</div>
       </div>
