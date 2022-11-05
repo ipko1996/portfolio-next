@@ -4,14 +4,23 @@ import Link from "next/link";
 import { useSelectedLayoutSegments } from "next/navigation";
 import React from "react";
 
-export default function NavLink({ href, children }: {href: string, children:  React.ReactNode;}) {
+export default function NavLink({
+  href,
+  children,
+  fn,
+}: {
+  href: string;
+  children: React.ReactNode;
+  fn?: () => void | undefined;
+}) {
   const selectedLayoutSegment = useSelectedLayoutSegments();
   const active = href === `/${selectedLayoutSegment}`;
   //console.log({ href, active, selectedLayoutSegment });
 
   return (
     <Link
-      className={"text-lg " + (active ? " underline font-semibold" : "")}
+      onClick={fn}
+      className={"text-lg p-2" + (active ? " underline font-semibold" : "")}
       href={href}
     >
       {children}

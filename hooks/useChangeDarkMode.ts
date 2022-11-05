@@ -10,8 +10,10 @@ export const useChangeDarkMode = () => {
       const element = window.document.body;
       if (isDarkMode) {
         element.classList.add(className);
+        element.setAttribute("data-theme", "night");
       } else {
         element.classList.remove(className);
+        element.setAttribute("data-theme", "light");
       }
     },
     [isDarkMode] // Only re-call effect when value changes
