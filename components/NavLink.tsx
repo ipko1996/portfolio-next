@@ -20,7 +20,7 @@ export default function NavLink({
   return (
     <Link
       onClick={fn}
-      className={"text-lg p-2" + (active ? " underline font-semibold" : "")}
+      className={"text-lg p-2 hover:underline" + (active ? " underline font-semibold" : "")}
       href={href}
     >
       {children}

@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@fortawesome/fontawesome-svg-core': ^6.2.0
+  '@fortawesome/free-brands-svg-icons': ^6.2.0
   '@fortawesome/free-solid-svg-icons': ^6.2.0
   '@fortawesome/react-fontawesome': ^0.2.0
   '@next/font': ^13.0.2
@@ -11,6 +12,8 @@ specifiers:
   autoprefixer: ^10.4.13
   daisyui: ^2.38.0
   next: 13.0.2
+  next-seo: ^5.14.0
+  next-sitemap: ^3.1.30
   postcss: ^8.4.18
   react: 18.2.0
   react-dom: 18.2.0
@@ -20,6 +23,7 @@ specifiers:
 
 dependencies:
   '@fortawesome/fontawesome-svg-core': 6.2.0
+  '@fortawesome/free-brands-svg-icons': 6.2.0
   '@fortawesome/free-solid-svg-icons': 6.2.0
   '@fortawesome/react-fontawesome': 0.2.0_6j2wdqxompc6mcokhxkpep2gqu
   '@next/font': 13.0.2
@@ -28,6 +32,8 @@ dependencies:
   '@types/react-dom': 18.0.8
   daisyui: 2.38.0_lycaqaeny3mp632atgvyvqdgwe
   next: 13.0.2_biqbaboplfbrettd7655fr4n2y
+  next-seo: 5.14.0_pknogjuzx4bv7zxtatcb2ahtsq
+  next-sitemap: 3.1.30_next@13.0.2
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   typescript: 4.8.4
@@ -40,6 +46,10 @@ devDependencies:
 
 packages:
 
+  /@corex/deepmerge/4.0.29:
+    resolution: {integrity: sha512-q/yVUnqckA8Do+EvAfpy7RLdumnBy9ZsducMUtZTvpdbJC7azEf1hGtnYYxm0QfphYxjwggv6XtH64prvS1W+A==}
+    dev: false
+
   /@fortawesome/fontawesome-common-types/6.2.0:
     resolution: {integrity: sha512-rBevIsj2nclStJ7AxTdfsa3ovHb1H+qApwrxcTVo+NNdeJiB9V75hsKfrkG5AwNcRUNxrPPiScGYCNmLMoh8pg==}
     engines: {node: '>=6'}
@@ -48,6 +58,14 @@ packages:
 
   /@fortawesome/fontawesome-svg-core/6.2.0:
     resolution: {integrity: sha512-Cf2mAAeMWFMzpLC7Y9H1I4o3wEU+XovVJhTiNG8ZNgSQj53yl7OCJaS80K4YjrABWZzbAHVaoHE1dVJ27AAYXw==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 6.2.0
+    dev: false
+
+  /@fortawesome/free-brands-svg-icons/6.2.0:
+    resolution: {integrity: sha512-fm1y4NyZ2qKYNmYhdMz9VAWRw1Et7PMHNunSw3W0SVAwKwv6o0qiJworLH3Y9SnmhHzAymXJwCX1op22FFvGiA==}
     engines: {node: '>=6'}
     requiresBuild: true
     dependencies:
@@ -534,6 +552,31 @@ packages:
     resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
+
+  /next-seo/5.14.0_pknogjuzx4bv7zxtatcb2ahtsq:
+    resolution: {integrity: sha512-VpbVFXbDzy31qoKBH7xoxtzh+nDhEWYOBnlc18zkXmypRd3X9vxdwh7rlr3q2BQTfbfk2J/a6Y2vEb+oTcCW0w==}
+    peerDependencies:
+      next: ^8.1.1-canary.54 || >=9.0.0
+      react: '>=16.0.0'
+      react-dom: '>=16.0.0'
+    dependencies:
+      next: 13.0.2_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /next-sitemap/3.1.30_next@13.0.2:
+    resolution: {integrity: sha512-mZqq9xWrTp/tgUM7+Oz/qxT6x2vnJhwQ3AGke2GjypRbUo44QaTb+4Cp1uX9GwXBaiuuuXDoWyS5VxJP3pJljw==}
+    engines: {node: '>=14.18'}
+    hasBin: true
+    peerDependencies:
+      '@next/env': '*'
+      next: '*'
+    dependencies:
+      '@corex/deepmerge': 4.0.29
+      minimist: 1.2.7
+      next: 13.0.2_biqbaboplfbrettd7655fr4n2y
+    dev: false
 
   /next/13.0.2_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-uQ5z5e4D9mOe8+upy6bQdYYjo/kk1v3jMW87kTy2TgAyAsEO+CkwRnMgyZ4JoHEnhPZLHwh7dk0XymRNLe1gFw==}

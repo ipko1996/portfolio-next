@@ -44,6 +44,9 @@ export default function NavBar() {
         <NavLink fn={value ? toggle : undefined} href="/work">
           Work
         </NavLink>
+        <NavLink fn={value ? toggle : undefined} href="/contact">
+          Contact
+        </NavLink>
         <DarkModeToggle />
       </div>
     </nav>
