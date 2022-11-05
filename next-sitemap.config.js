@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: 'ipko.dev',
+    siteUrl: 'https://ipko.dev',
     generateRobotsTxt: true, // (optional)
     // ...other options
 }
