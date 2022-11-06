@@ -1,6 +1,10 @@
 import React from "react";
 import { NextSeo } from "next-seo";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NEXT_SEO_DEFAULT } from "../../next-seo.config";
 
@@ -42,6 +46,22 @@ export default function Contact() {
                 >
                   <h1 className={"text-2xl hover:underline"}>
                     Bálint Ipkovich
+                  </h1>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td className={"p-2"}>
+                <FontAwesomeIcon size={"4x"} icon={faTwitter} />
+              </td>
+              <td className={"p-2"}>
+                <a
+                  rel="noreferrer"
+                  href="https://twitter.com/balint_ipkovich"
+                  target={"_blank"}
+                >
+                  <h1 className={"text-2xl hover:underline"}>
+                    balint_ipkovich
                   </h1>
                 </a>
               </td>
