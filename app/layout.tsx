@@ -22,7 +22,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
 
-      <body className="h-screen transition-colors ease-in-out duration-300">
+      <body className="h-screen transition-colors ease-in-out duration-300 overflow-x-hidden">
         <div className="flex flex-col h-full bg-slate-100 text-slate-900 dark:bg-slate-900 dark:text-slate-100">
           <div className="flex-initial">
             <NavBar />
