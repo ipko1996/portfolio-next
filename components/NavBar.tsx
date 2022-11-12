@@ -43,9 +43,10 @@ export default function NavBar() {
       <motion.div
         animate={value ? "open" : "closed"}
         variants={variants}
-        transition={{ ease: "linear", duration: 0.3 }}
+        transition={{ ease: "linear", duration: 0.2 }}
         className={`
-        md:static md:bg-transparent md:dark:bg-transparent
+        xl:w-2/5
+        md:static md:bg-transparent md:dark:bg-transparent md:w-2/3
         w-2/3 absolute top-0 translate-x-full right-0
         dark:bg-slate-700 bg-slate-200
        ${value ? "" : ""}`}

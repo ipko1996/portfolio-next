@@ -23,7 +23,7 @@ export default function RootLayout({
       </head>
 
       <body className="h-screen transition-colors ease-in-out duration-300 overflow-x-hidden">
-        <div className="flex flex-col h-full bg-slate-100 text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+        <div className="flex flex-col h-full from-white to-slate-400 text-slate-900 bg-gradient-to-br dark:from-indigo-500 dark:to-slate-900 dark:text-slate-100">
           <div className="flex-initial">
             <NavBar />
           </div>

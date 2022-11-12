@@ -10,7 +10,7 @@ export const useChangeDarkMode = () => {
       const element = window.document.body;
       if (isDarkMode) {
         element.classList.add(className);
-        element.setAttribute("data-theme", "night");
+        element.setAttribute("data-theme", "synthwave");
       } else {
         element.classList.remove(className);
         element.setAttribute("data-theme", "light");
